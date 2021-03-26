@@ -40,6 +40,7 @@
   <kbd>[</kbd>: önceki sekme
   <kbd>]</kbd>: sonraki sekme
   <kbd>R</kbd>: yeniden başlatma seçeneklerini görüntüle
+  <kbd>E</kbd>: exec shell
   <kbd>c</kbd>: önceden tanımlanmış özel komutu çalıştır
   <kbd>b</kbd>: view bulk commands
   <kbd>enter</kbd>: ana panele odaklan

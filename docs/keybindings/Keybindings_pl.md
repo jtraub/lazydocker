@@ -40,6 +40,7 @@
   <kbd>[</kbd>: poprzednia zakładka
   <kbd>]</kbd>: następna zakładka
   <kbd>R</kbd>: pokaż opcje restartu
+  <kbd>E</kbd>: exec shell
   <kbd>c</kbd>: wykonaj predefiniowaną własną komende
   <kbd>b</kbd>: view bulk commands
   <kbd>enter</kbd>: skup na głównym panelu

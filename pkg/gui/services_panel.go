@@ -366,6 +366,28 @@ func (gui *Gui) createServiceCommandMenu(options []*commandOption, status string
 	return gui.createMenu("", options, len(options), handleMenuPress)
 }
 
+func (gui *Gui) handleServicesExecShell(g *gocui.Gui, v *gocui.View) error {
+	service, err := gui.getSelectedService()
+	if err != nil {
+		return nil
+	}
+
+	container := service.Container
+	if container == nil {
+		return gui.createErrorPanel(gui.g, gui.Tr.NoContainers)
+	}
+
+	commandObject := gui.DockerCommand.NewCommandObject(commands.CommandObject{
+		Service:   service,
+		Container: container,
+	})
+	resolvedCommand := utils.ApplyTemplate("docker exec -it {{ .Container.ID }} /bin/sh -c 'eval $(grep ^$(id -un): /etc/passwd | cut -d : -f 7-)'", commandObject)
+	// attach and return the subprocess error
+	cmd := gui.OSCommand.ExecutableFromString(resolvedCommand)
+	gui.SubProcess = cmd
+	return gui.Errors.ErrSubProcess
+}
+
 func (gui *Gui) handleServicesCustomCommand(g *gocui.Gui, v *gocui.View) error {
 	service, err := gui.getSelectedService()
 	if err != nil {

@@ -40,6 +40,7 @@
   <kbd>[</kbd>: vorheriges Tab
   <kbd>]</kbd>: nächstes Tab
   <kbd>R</kbd>: zeige Neustartoptionen
+  <kbd>E</kbd>: exec shell
   <kbd>c</kbd>: führe vordefinierten benutzerdefinierten Befehl aus
   <kbd>b</kbd>: view bulk commands
   <kbd>enter</kbd>: fokussieren aufs Hauptpanel

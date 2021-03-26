@@ -40,6 +40,7 @@
   <kbd>[</kbd>: vorige tab
   <kbd>]</kbd>: volgende tab
   <kbd>R</kbd>: bekijk herstart opties
+  <kbd>E</kbd>: exec shell
   <kbd>c</kbd>: draai een vooraf bedacht aangepaste opdracht
   <kbd>b</kbd>: view bulk commands
   <kbd>enter</kbd>: focus hoofdpaneel

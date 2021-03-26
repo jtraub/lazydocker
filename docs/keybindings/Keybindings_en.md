@@ -40,6 +40,7 @@
   <kbd>[</kbd>: previous tab
   <kbd>]</kbd>: next tab
   <kbd>R</kbd>: view restart options
+  <kbd>E</kbd>: exec shell
   <kbd>c</kbd>: run predefined custom command
   <kbd>b</kbd>: view bulk commands
   <kbd>enter</kbd>: focus main panel
